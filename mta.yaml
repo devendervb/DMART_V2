@@ -1,0 +1,75 @@
+_schema-version: 3.3.0
+ID: DMART_V2
+description: A simple CAP project.
+version: 1.0.0
+modules:
+  - name: DMART_V2-srv
+    type: nodejs
+    path: gen/srv
+    requires:
+      - name: DMART_V2-db
+      - name: DMART_V2-auth
+    provides:
+      - name: srv-api
+        properties:
+          srv-url: ${default-url}
+    parameters:
+      buildpack: nodejs_buildpack
+      instances: 1
+    build-parameters:
+      builder: npm-ci
+  - name: DMART_V2-db-deployer
+    type: hdb
+    path: gen/db
+    requires:
+      - name: DMART_V2-db
+    parameters:
+      buildpack: nodejs_buildpack
+  - name: DMART_V2
+    type: approuter.nodejs
+    path: app/router
+    requires:
+      - name: srv-api
+        group: destinations
+        properties:
+          forwardAuthToken: true
+          name: srv-api
+          url: ~{srv-url}
+      - name: DMART_V2-auth
+    provides:
+      - name: app-api
+        properties:
+          app-protocol: ${protocol}
+          app-uri: ${default-uri}
+    parameters:
+      disk-quota: 256M
+      keep-existing-routes: true
+      memory: 256M
+resources:
+  - name: DMART_V2-db
+    type: com.sap.xs.hdi-container
+    parameters:
+      service: hana
+      service-plan: hdi-shared
+  - name: DMART_V2-auth
+    type: org.cloudfoundry.managed-service
+    parameters:
+      config:
+        tenant-mode: dedicated
+        xsappname: DMART_V2-${org}-${space}
+      path: ./xs-security.json
+      service: xsuaa
+      service-plan: application
+  - name: DMART_V2_html_repo_host
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: html5-apps-repo
+      service-plan: app-host
+parameters:
+  enable-parallel-deployments: true
+build-parameters:
+  before-all:
+    - builder: custom
+      commands:
+        - npm ci
+        - npx cds build --production

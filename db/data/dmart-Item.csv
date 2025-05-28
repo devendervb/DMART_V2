@@ -1,0 +1,51 @@
+ID,Name,Name_in_telugu,Status,Quantity,UoM,Category
+1,Gundu Pappu,గుండు పప్పు,Buy,1,kg,Grocery
+2,Urad dal,ఉరడ  పప్పు,Bought,1,kg,Grocery
+3,Ashirwad Wheat,ఆశీర్వాద్ గోధుమ,Not available,1,kg,Grocery
+4,Moong Dal,మూంగ్ దాల్,Not required,1,kg,Grocery
+5,White Chana,తెల్ల చానా,Buy,1,kg,Grocery
+6,Toor Dal,కందిపప్పు,Bought,1,kg,Grocery
+7,Rice,బియ్యం,Not available,1,kg,Grocery
+8,Milk,పాలు,Not required,1,liter,Dairy
+9,Sugar,చక్కెర,Buy,1,kg,Grocery
+10,Toothpaste,పేస్ట్,Bought,1,pcs,Personal Care
+11,Soap,సబ్బు,Not available,1,pcs,Personal Care
+12,Shampoo,షాంపూ,Not required,1,bottle,Personal Care
+13,Bread,బ్రెడ్,Buy,1,packet,Bakery
+14,Tea Powder,టీ పొడి,Bought,1,kg,Grocery
+15,Coffee Powder,కాఫీ పొడి,Not available,1,kg,Grocery
+16,Wheat Flour,గోధుమ పిండి,Not required,1,kg,Grocery
+17,Ghee,నెయ్యి,Buy,1,kg,Grocery
+18,Chilli Powder,కారం పొడి,Bought,1,kg,Spices
+19,Turmeric Powder,పసుపు పొడి,Not available,1,kg,Spices
+20,Pepper,మిరియాలు,Not required,1,kg,Spices
+21,Tomatoes,టమాటా,Buy,1,kg,Vegetables
+22,Potato,బంగాళదుంప,Bought,1,kg,Vegetables
+23,Onions,ఉల్లిపాయలు,Not available,1,kg,Vegetables
+24,Carrots,కారెట్,Not required,1,kg,Vegetables
+25,Spinach,పాలకూర,Buy,1,bundle,Vegetables
+26,Paneer,పనీర్,Bought,1,kg,Dairy
+27,Curd,పెరుగు,Not available,1,kg,Dairy
+28,Butter,వెన్న,Not required,1,kg,Dairy
+29,Apple,ఆపిల్స్,Buy,1,kg,Fruits
+30,Banana,అరటిపండు,Bought,1,kg,Fruits
+31,Orange,నారింజ,Not available,1,kg,Fruits
+32,Grapes,ద్రాక్ష,Not required,1,kg,Fruits
+33,Watermelon,పుచ్చకాయ,Buy,1,pcs,Fruits
+34,Mangoes,మామిడి పండ్లు,Bought,1,pcs,Fruits
+35,Papaya,బొప్పాయి,Not available,1,pcs,Fruits
+36,Lemon,నిమ్మకాయ,Not required,1,pcs,Fruits
+37,Cauliflower,కాలీఫ్లవర్,Buy,1,pcs,Vegetables
+38,Garlic,వెల్లుల్లి,Bought,1,kg,Vegetables
+39,Ginger,అల్లం,Not available,1,kg,Vegetables
+40,Coconut,కొబ్బరి కాయ,Not required,1,pcs,Fruits
+41,Peanut Oil,వేరుశెనగ నూనె,Buy,1,liter,Grocery
+42,Almonds,బాదం,Bought,1,kg,Dry Fruits
+43,Cashew Nuts,జీడిపప్పు,Not available,1,kg,Dry Fruits
+44,Raisins,కిస్మిస్,Not required,1,kg,Dry Fruits
+45,Laundry Detergent,లాండ్రీ డిటర్జెంట్,Buy,1,kg,Household
+46,Dish Soap,డిష్ సబ్బు,Bought,1,bottle,Household
+47,Floor Cleaner,ఫ్లోర్ క్లీనర్,Not available,1,bottle,Household
+48,Toilet Cleaner,టాయిలెట్ క్లీనర్,Not required,1,bottle,Household
+49,Dates,ఖర్జూరం,Buy,1,kg,Dry Fruits
+50,Pistachio,పిస్తా,Bought,1,kg,Dry Fruits
