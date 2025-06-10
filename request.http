@@ -1,0 +1,5 @@
+### Call ResetItemsStatus action locally
+POST http://localhost:4004/odata/v4/catalog/ResetItemsStatus
+Content-Type: application/json
+
+{}
